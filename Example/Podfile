@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'XTGameCenterHelper_Example' do
+  pod 'XTGameCenterHelper', :path => '../'
+
+  target 'XTGameCenterHelper_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
