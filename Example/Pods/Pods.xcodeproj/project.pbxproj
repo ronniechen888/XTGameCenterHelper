@@ -1,0 +1,720 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00FCC50EF89F9EC11DB0DC85375A0DA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		5F53D3DCC45A893FB0ADA4E8F6E3E302 /* Pods-XTGameCenterHelper_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F75D4FC4520CA7D77B758C4DC8AA0F5E /* Pods-XTGameCenterHelper_Example-dummy.m */; };
+		8D0BB81437BBA17A714438132D72FFEF /* Pods-XTGameCenterHelper_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7084CE87D25746F50CF75CD07B32458 /* Pods-XTGameCenterHelper_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3972C86BBF0CA2051C477CC3B210C4D /* Pods-XTGameCenterHelper_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B0BB9F5EDAE8D8E181B4C3049E7DA20 /* Pods-XTGameCenterHelper_Tests-dummy.m */; };
+		B9AA84DF4590CDEE0E91C271349926CF /* Pods-XTGameCenterHelper_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E2796417893188ACC333BA44B54FA7A /* Pods-XTGameCenterHelper_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BABAD1897E50ADBBFF332F8C10E47E0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		C298839753D69C13A29C19A148FDD978 /* XTGameCenterHelper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF9088836B5AF62ACFCA68CD2CF7CC8B /* XTGameCenterHelper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3FA45723C28D24EB80AD5EE1722D255 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		EA0342811FD002A900640A4D /* XTGameCenterHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = EA03427F1FD002A900640A4D /* XTGameCenterHelper.h */; };
+		EA0342821FD002A900640A4D /* XTGameCenterHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EA0342801FD002A900640A4D /* XTGameCenterHelper.m */; };
+		EA0342841FD0032A00640A4D /* XTGameCenterHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = EA03427F1FD002A900640A4D /* XTGameCenterHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDC572F8ED972F81791AF37F7689AA37 /* XTGameCenterHelper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 637CC296B5252B8D8CD49721FF7DB641 /* XTGameCenterHelper-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E0F815AC85E09650E4A29E30853A3E72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D2E87A14B53C5F22F221C35D16A97C0;
+			remoteInfo = XTGameCenterHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1296F162F7B7B1172267257479F9CCF5 /* Pods-XTGameCenterHelper_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-XTGameCenterHelper_Tests.modulemap"; sourceTree = "<group>"; };
+		25C6E7FEB56EB7377245D3365255BBAC /* Pods-XTGameCenterHelper_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XTGameCenterHelper_Tests-resources.sh"; sourceTree = "<group>"; };
+		2766C97A5290E9DC41BCB556378F67A9 /* Pods-XTGameCenterHelper_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XTGameCenterHelper_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		3298D8CCDF98798BF50E2BF6B496B4F7 /* Pods-XTGameCenterHelper_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-XTGameCenterHelper_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		43B089E13B2282C522C54BCB9F0141C9 /* Pods-XTGameCenterHelper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XTGameCenterHelper_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		4538EA572F4A5BCAFC526C559801A8E3 /* Pods_XTGameCenterHelper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XTGameCenterHelper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		637CC296B5252B8D8CD49721FF7DB641 /* XTGameCenterHelper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XTGameCenterHelper-dummy.m"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6AC15CDDB729DBF329C6824D8B8C4764 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B0F52A5F79C9A5A5E39B5F83C5C92B8 /* Pods-XTGameCenterHelper_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XTGameCenterHelper_Example-resources.sh"; sourceTree = "<group>"; };
+		6C491111B28D7533F7030AC55E8D7664 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7102C1C4C7CAC6FB35EF7B71CD8BFDC8 /* XTGameCenterHelper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XTGameCenterHelper.xcconfig; sourceTree = "<group>"; };
+		74642410875A5194ACB8EE142604F0FE /* Pods-XTGameCenterHelper_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XTGameCenterHelper_Example-frameworks.sh"; sourceTree = "<group>"; };
+		7B0BB9F5EDAE8D8E181B4C3049E7DA20 /* Pods-XTGameCenterHelper_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XTGameCenterHelper_Tests-dummy.m"; sourceTree = "<group>"; };
+		7E2796417893188ACC333BA44B54FA7A /* Pods-XTGameCenterHelper_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XTGameCenterHelper_Tests-umbrella.h"; sourceTree = "<group>"; };
+		8733CCD37BE1E6C41A208D7A17796F29 /* Pods-XTGameCenterHelper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XTGameCenterHelper_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9CC063C02968D05FDDB2964C13A2EABF /* Pods-XTGameCenterHelper_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-XTGameCenterHelper_Example.modulemap"; sourceTree = "<group>"; };
+		A7084CE87D25746F50CF75CD07B32458 /* Pods-XTGameCenterHelper_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-XTGameCenterHelper_Example-umbrella.h"; sourceTree = "<group>"; };
+		AB94CCE4E652C5C1BB92BA0C62DB50B3 /* Pods-XTGameCenterHelper_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XTGameCenterHelper_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B07AEA4E2B96BBD55AD6EA4EFE968304 /* Pods-XTGameCenterHelper_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-XTGameCenterHelper_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		CDA314F52F3192F3A5D8AA569F2FAF94 /* Pods-XTGameCenterHelper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XTGameCenterHelper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		DB1DAF6E10A27B5ECD97173FA0B2C1A2 /* XTGameCenterHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XTGameCenterHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E06C56F0B1EA532F94D62EDFB5E775CD /* Pods_XTGameCenterHelper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XTGameCenterHelper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E141DBE8E38C16496AD39ABE93E368F6 /* XTGameCenterHelper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = XTGameCenterHelper.modulemap; sourceTree = "<group>"; };
+		E38D890E02A42C1276BC218FD36CE083 /* Pods-XTGameCenterHelper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-XTGameCenterHelper_Example.release.xcconfig"; sourceTree = "<group>"; };
+		E81525669BED0914FAB36F6ADBD11557 /* Pods-XTGameCenterHelper_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-XTGameCenterHelper_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EA03427F1FD002A900640A4D /* XTGameCenterHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = XTGameCenterHelper.h; path = XTGameCenterHelper/Classes/XTGameCenterHelper.h; sourceTree = "<group>"; };
+		EA0342801FD002A900640A4D /* XTGameCenterHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = XTGameCenterHelper.m; path = XTGameCenterHelper/Classes/XTGameCenterHelper.m; sourceTree = "<group>"; };
+		F75D4FC4520CA7D77B758C4DC8AA0F5E /* Pods-XTGameCenterHelper_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-XTGameCenterHelper_Example-dummy.m"; sourceTree = "<group>"; };
+		F888E064AD7C8F8A30803B4864699039 /* XTGameCenterHelper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XTGameCenterHelper-prefix.pch"; sourceTree = "<group>"; };
+		FEC836398768E21477F66224547E7AA2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF9088836B5AF62ACFCA68CD2CF7CC8B /* XTGameCenterHelper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XTGameCenterHelper-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D007222EF325DAB162D88A4BFF99FECE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BABAD1897E50ADBBFF332F8C10E47E0B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D417658D32F10A1BC128B39A754C710A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3FA45723C28D24EB80AD5EE1722D255 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E447601BB5F81C90C43D80842CA75813 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00FCC50EF89F9EC11DB0DC85375A0DA2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D96D9290379EF194011F94026CA5213 /* XTGameCenterHelper */ = {
+			isa = PBXGroup;
+			children = (
+				C7A2489ABC456E94E3EB2155EBB05ABD /* Support Files */,
+				EA03427F1FD002A900640A4D /* XTGameCenterHelper.h */,
+				EA0342801FD002A900640A4D /* XTGameCenterHelper.m */,
+			);
+			name = XTGameCenterHelper;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		267F80D46511B6C813B7FA0895E6B66C /* Pods-XTGameCenterHelper_Example */ = {
+			isa = PBXGroup;
+			children = (
+				6C491111B28D7533F7030AC55E8D7664 /* Info.plist */,
+				9CC063C02968D05FDDB2964C13A2EABF /* Pods-XTGameCenterHelper_Example.modulemap */,
+				AB94CCE4E652C5C1BB92BA0C62DB50B3 /* Pods-XTGameCenterHelper_Example-acknowledgements.markdown */,
+				3298D8CCDF98798BF50E2BF6B496B4F7 /* Pods-XTGameCenterHelper_Example-acknowledgements.plist */,
+				F75D4FC4520CA7D77B758C4DC8AA0F5E /* Pods-XTGameCenterHelper_Example-dummy.m */,
+				74642410875A5194ACB8EE142604F0FE /* Pods-XTGameCenterHelper_Example-frameworks.sh */,
+				6B0F52A5F79C9A5A5E39B5F83C5C92B8 /* Pods-XTGameCenterHelper_Example-resources.sh */,
+				A7084CE87D25746F50CF75CD07B32458 /* Pods-XTGameCenterHelper_Example-umbrella.h */,
+				8733CCD37BE1E6C41A208D7A17796F29 /* Pods-XTGameCenterHelper_Example.debug.xcconfig */,
+				E38D890E02A42C1276BC218FD36CE083 /* Pods-XTGameCenterHelper_Example.release.xcconfig */,
+			);
+			name = "Pods-XTGameCenterHelper_Example";
+			path = "Target Support Files/Pods-XTGameCenterHelper_Example";
+			sourceTree = "<group>";
+		};
+		26B8BA0361FD61F82EA5A137A79AB280 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D96D9290379EF194011F94026CA5213 /* XTGameCenterHelper */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		2D6CDE61544AE3A4F3836F04B0490D67 /* Pods-XTGameCenterHelper_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6AC15CDDB729DBF329C6824D8B8C4764 /* Info.plist */,
+				1296F162F7B7B1172267257479F9CCF5 /* Pods-XTGameCenterHelper_Tests.modulemap */,
+				E81525669BED0914FAB36F6ADBD11557 /* Pods-XTGameCenterHelper_Tests-acknowledgements.markdown */,
+				2766C97A5290E9DC41BCB556378F67A9 /* Pods-XTGameCenterHelper_Tests-acknowledgements.plist */,
+				7B0BB9F5EDAE8D8E181B4C3049E7DA20 /* Pods-XTGameCenterHelper_Tests-dummy.m */,
+				B07AEA4E2B96BBD55AD6EA4EFE968304 /* Pods-XTGameCenterHelper_Tests-frameworks.sh */,
+				25C6E7FEB56EB7377245D3365255BBAC /* Pods-XTGameCenterHelper_Tests-resources.sh */,
+				7E2796417893188ACC333BA44B54FA7A /* Pods-XTGameCenterHelper_Tests-umbrella.h */,
+				CDA314F52F3192F3A5D8AA569F2FAF94 /* Pods-XTGameCenterHelper_Tests.debug.xcconfig */,
+				43B089E13B2282C522C54BCB9F0141C9 /* Pods-XTGameCenterHelper_Tests.release.xcconfig */,
+			);
+			name = "Pods-XTGameCenterHelper_Tests";
+			path = "Target Support Files/Pods-XTGameCenterHelper_Tests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				26B8BA0361FD61F82EA5A137A79AB280 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				F293D6C66FDDF030D242AE853219C8D7 /* Products */,
+				9C849C6519526018AF6F19C6FC916E29 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9C849C6519526018AF6F19C6FC916E29 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				267F80D46511B6C813B7FA0895E6B66C /* Pods-XTGameCenterHelper_Example */,
+				2D6CDE61544AE3A4F3836F04B0490D67 /* Pods-XTGameCenterHelper_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C7A2489ABC456E94E3EB2155EBB05ABD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEC836398768E21477F66224547E7AA2 /* Info.plist */,
+				E141DBE8E38C16496AD39ABE93E368F6 /* XTGameCenterHelper.modulemap */,
+				7102C1C4C7CAC6FB35EF7B71CD8BFDC8 /* XTGameCenterHelper.xcconfig */,
+				637CC296B5252B8D8CD49721FF7DB641 /* XTGameCenterHelper-dummy.m */,
+				F888E064AD7C8F8A30803B4864699039 /* XTGameCenterHelper-prefix.pch */,
+				FF9088836B5AF62ACFCA68CD2CF7CC8B /* XTGameCenterHelper-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/XTGameCenterHelper";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F293D6C66FDDF030D242AE853219C8D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E06C56F0B1EA532F94D62EDFB5E775CD /* Pods_XTGameCenterHelper_Example.framework */,
+				4538EA572F4A5BCAFC526C559801A8E3 /* Pods_XTGameCenterHelper_Tests.framework */,
+				DB1DAF6E10A27B5ECD97173FA0B2C1A2 /* XTGameCenterHelper.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		043AAB16D8D354B3F043E63472D282C5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9AA84DF4590CDEE0E91C271349926CF /* Pods-XTGameCenterHelper_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1790210A37EBF90F654D0DC629394893 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C298839753D69C13A29C19A148FDD978 /* XTGameCenterHelper-umbrella.h in Headers */,
+				EA0342841FD0032A00640A4D /* XTGameCenterHelper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FE86E9192CE21D21635E4F77DA972F6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0BB81437BBA17A714438132D72FFEF /* Pods-XTGameCenterHelper_Example-umbrella.h in Headers */,
+				EA0342811FD002A900640A4D /* XTGameCenterHelper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5D2E87A14B53C5F22F221C35D16A97C0 /* XTGameCenterHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98045403EA44FAECE75D8DFF88AC0D91 /* Build configuration list for PBXNativeTarget "XTGameCenterHelper" */;
+			buildPhases = (
+				A1943AB9C1C20B36A7B5D1DBF4760B4B /* Sources */,
+				D007222EF325DAB162D88A4BFF99FECE /* Frameworks */,
+				1790210A37EBF90F654D0DC629394893 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XTGameCenterHelper;
+			productName = XTGameCenterHelper;
+			productReference = DB1DAF6E10A27B5ECD97173FA0B2C1A2 /* XTGameCenterHelper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6A3E1FFE110D738766DD5AE96959DCC3 /* Pods-XTGameCenterHelper_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 72FDF7DF330FA62A6596A505B3AE4F9E /* Build configuration list for PBXNativeTarget "Pods-XTGameCenterHelper_Tests" */;
+			buildPhases = (
+				97C5B0BDDD708AC2655A054ACF87C732 /* Sources */,
+				D417658D32F10A1BC128B39A754C710A /* Frameworks */,
+				043AAB16D8D354B3F043E63472D282C5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-XTGameCenterHelper_Tests";
+			productName = "Pods-XTGameCenterHelper_Tests";
+			productReference = 4538EA572F4A5BCAFC526C559801A8E3 /* Pods_XTGameCenterHelper_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FD7187FB1692CEF13F5B507A83ED40CC /* Pods-XTGameCenterHelper_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C089CB090276378A96F396484D474CAA /* Build configuration list for PBXNativeTarget "Pods-XTGameCenterHelper_Example" */;
+			buildPhases = (
+				14E96361CDEE961EF20EAB6D02532B81 /* Sources */,
+				E447601BB5F81C90C43D80842CA75813 /* Frameworks */,
+				9FE86E9192CE21D21635E4F77DA972F6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F25BD4B88E8D9DAD8FD9AFB1F237EF2F /* PBXTargetDependency */,
+			);
+			name = "Pods-XTGameCenterHelper_Example";
+			productName = "Pods-XTGameCenterHelper_Example";
+			productReference = E06C56F0B1EA532F94D62EDFB5E775CD /* Pods_XTGameCenterHelper_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					5D2E87A14B53C5F22F221C35D16A97C0 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = F293D6C66FDDF030D242AE853219C8D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD7187FB1692CEF13F5B507A83ED40CC /* Pods-XTGameCenterHelper_Example */,
+				6A3E1FFE110D738766DD5AE96959DCC3 /* Pods-XTGameCenterHelper_Tests */,
+				5D2E87A14B53C5F22F221C35D16A97C0 /* XTGameCenterHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14E96361CDEE961EF20EAB6D02532B81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA0342821FD002A900640A4D /* XTGameCenterHelper.m in Sources */,
+				5F53D3DCC45A893FB0ADA4E8F6E3E302 /* Pods-XTGameCenterHelper_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97C5B0BDDD708AC2655A054ACF87C732 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3972C86BBF0CA2051C477CC3B210C4D /* Pods-XTGameCenterHelper_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1943AB9C1C20B36A7B5D1DBF4760B4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDC572F8ED972F81791AF37F7689AA37 /* XTGameCenterHelper-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F25BD4B88E8D9DAD8FD9AFB1F237EF2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XTGameCenterHelper;
+			target = 5D2E87A14B53C5F22F221C35D16A97C0 /* XTGameCenterHelper */;
+			targetProxy = E0F815AC85E09650E4A29E30853A3E72 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2B74E99B7CAAEF70C644D2E87EE802AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43B089E13B2282C522C54BCB9F0141C9 /* Pods-XTGameCenterHelper_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XTGameCenterHelper_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XTGameCenterHelper_Tests/Pods-XTGameCenterHelper_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_XTGameCenterHelper_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		3A8FDE52C11020D4574FA46324B18B5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDA314F52F3192F3A5D8AA569F2FAF94 /* Pods-XTGameCenterHelper_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XTGameCenterHelper_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XTGameCenterHelper_Tests/Pods-XTGameCenterHelper_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_XTGameCenterHelper_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		467E473996579C1ED19427195209FB0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8733CCD37BE1E6C41A208D7A17796F29 /* Pods-XTGameCenterHelper_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XTGameCenterHelper_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XTGameCenterHelper_Example/Pods-XTGameCenterHelper_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_XTGameCenterHelper_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		731DC216E1A58545B559F6E0A2418060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8F3D7D5500DCB388DC53532DE58B3AD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7102C1C4C7CAC6FB35EF7B71CD8BFDC8 /* XTGameCenterHelper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XTGameCenterHelper/XTGameCenterHelper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XTGameCenterHelper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XTGameCenterHelper/XTGameCenterHelper.modulemap";
+				PRODUCT_NAME = XTGameCenterHelper;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		903D539C20B2B36835BCB9339954BAED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E38D890E02A42C1276BC218FD36CE083 /* Pods-XTGameCenterHelper_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-XTGameCenterHelper_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-XTGameCenterHelper_Example/Pods-XTGameCenterHelper_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_XTGameCenterHelper_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C7226DDAAFC2DE14BC5E84D91CB7A95B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7102C1C4C7CAC6FB35EF7B71CD8BFDC8 /* XTGameCenterHelper.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XTGameCenterHelper/XTGameCenterHelper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XTGameCenterHelper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XTGameCenterHelper/XTGameCenterHelper.modulemap";
+				PRODUCT_NAME = XTGameCenterHelper;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */,
+				731DC216E1A58545B559F6E0A2418060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		72FDF7DF330FA62A6596A505B3AE4F9E /* Build configuration list for PBXNativeTarget "Pods-XTGameCenterHelper_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A8FDE52C11020D4574FA46324B18B5C /* Debug */,
+				2B74E99B7CAAEF70C644D2E87EE802AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98045403EA44FAECE75D8DFF88AC0D91 /* Build configuration list for PBXNativeTarget "XTGameCenterHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7226DDAAFC2DE14BC5E84D91CB7A95B /* Debug */,
+				8F3D7D5500DCB388DC53532DE58B3AD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C089CB090276378A96F396484D474CAA /* Build configuration list for PBXNativeTarget "Pods-XTGameCenterHelper_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				467E473996579C1ED19427195209FB0C /* Debug */,
+				903D539C20B2B36835BCB9339954BAED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

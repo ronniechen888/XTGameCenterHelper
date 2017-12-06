@@ -1,0 +1,22 @@
+{
+  "name": "XTGameCenterHelper",
+  "version": "0.1.0",
+  "summary": "A short description of XTGameCenterHelper.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ronniechen888/XTGameCenterHelper",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ronniechen888": "576892817@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/ronniechen888/XTGameCenterHelper.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "XTGameCenterHelper/Classes/**/*"
+}

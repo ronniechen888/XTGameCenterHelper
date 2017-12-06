@@ -24,6 +24,8 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		7412BA1F1A1A1EF9F4386F74 /* Pods_XTGameCenterHelper_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D2414202E2A73D181BFB21 /* Pods_XTGameCenterHelper_Tests.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		EA2DB1DA1FD792FE0020EDDE /* XTRealTimeGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA2DB1D91FD792FE0020EDDE /* XTRealTimeGameViewController.m */; };
+		EA7F85211FD1293A00B576DA /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA7F85201FD1293A00B576DA /* GameKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,7 @@
 
 /* Begin PBXFileReference section */
 		03454204186CB3BDAE19F439 /* Pods_XTGameCenterHelper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XTGameCenterHelper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B77D81BD2AF0F59FE530309 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		0B77D81BD2AF0F59FE530309 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		174590D193AD37DBEF8AABF5 /* Pods-XTGameCenterHelper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XTGameCenterHelper_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XTGameCenterHelper_Example/Pods-XTGameCenterHelper_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		303B8E3BE0001B6F7DE04850 /* Pods-XTGameCenterHelper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XTGameCenterHelper_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XTGameCenterHelper_Tests/Pods-XTGameCenterHelper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3D359C2CD52A58D6CEC0C072 /* Pods-XTGameCenterHelper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XTGameCenterHelper_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-XTGameCenterHelper_Example/Pods-XTGameCenterHelper_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -62,11 +64,14 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		65D163F99FCF8931B51A5BAD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		65D163F99FCF8931B51A5BAD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8D08278327136A40F48B88E4 /* XTGameCenterHelper.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = XTGameCenterHelper.podspec; path = ../XTGameCenterHelper.podspec; sourceTree = "<group>"; };
+		8D08278327136A40F48B88E4 /* XTGameCenterHelper.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XTGameCenterHelper.podspec; path = ../XTGameCenterHelper.podspec; sourceTree = "<group>"; };
 		E51054C52DDB1646DE2586D8 /* Pods-XTGameCenterHelper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XTGameCenterHelper_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XTGameCenterHelper_Tests/Pods-XTGameCenterHelper_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		EA2DB1D81FD792FE0020EDDE /* XTRealTimeGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XTRealTimeGameViewController.h; sourceTree = "<group>"; };
+		EA2DB1D91FD792FE0020EDDE /* XTRealTimeGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTRealTimeGameViewController.m; sourceTree = "<group>"; };
+		EA7F85201FD1293A00B576DA /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +83,7 @@
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
 				116F14F350C95366B1E20115 /* Pods_XTGameCenterHelper_Example.framework in Frameworks */,
+				EA7F85211FD1293A00B576DA /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +125,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA7F85201FD1293A00B576DA /* GameKit.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -140,6 +147,8 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				EA2DB1D81FD792FE0020EDDE /* XTRealTimeGameViewController.h */,
+				EA2DB1D91FD792FE0020EDDE /* XTRealTimeGameViewController.m */,
 			);
 			name = "Example for XTGameCenterHelper";
 			path = XTGameCenterHelper;
@@ -250,6 +259,14 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = ronniechen888;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = J3JB3WZ6R5;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+						};
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -404,6 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* XTAppDelegate.m in Sources */,
+				EA2DB1DA1FD792FE0020EDDE /* XTRealTimeGameViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* XTViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
@@ -533,11 +551,12 @@
 			baseConfigurationReference = 174590D193AD37DBEF8AABF5 /* Pods-XTGameCenterHelper_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J3JB3WZ6R5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XTGameCenterHelper/XTGameCenterHelper-Prefix.pch";
 				INFOPLIST_FILE = "XTGameCenterHelper/XTGameCenterHelper-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.mkgame.basketball;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -548,11 +567,12 @@
 			baseConfigurationReference = 3D359C2CD52A58D6CEC0C072 /* Pods-XTGameCenterHelper_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = J3JB3WZ6R5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XTGameCenterHelper/XTGameCenterHelper-Prefix.pch";
 				INFOPLIST_FILE = "XTGameCenterHelper/XTGameCenterHelper-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.mkgame.basketball;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
