@@ -37,8 +37,8 @@
 	} failedHandler:^(NSError *error){
 		NSLog(@"Login Failed!");
 		[[XTGameCenterHelper sharedGameCenter] showGameCenterLoginViewControllerFailedHandler:^{
-			UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"警告" message:@"请前往设置的Game Center中心进行登录" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
-			[alertView show];
+//			UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"警告" message:@"请前往设置的Game Center中心进行登录" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+//			[alertView show];
 		}];
 	}];
 	
@@ -69,6 +69,10 @@
 																	hostedPlayerDidAccept:nil];
 	
 	[[XTGameCenterHelper sharedGameCenter] createAndShowMatchMakeViewControllerInCurrentViewController:self minPlayers:2 maxPlayers:2];
+}
+
+-(void)anoymousLogin:(id)sender{
+	[[XTGameCenterHelper sharedGameCenter] anonymousGuestPlayerWithIdentifier:@"asdsadfsf"];
 }
 
 @end

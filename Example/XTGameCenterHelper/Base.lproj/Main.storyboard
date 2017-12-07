@@ -49,7 +49,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8b-bq-lJk">
                                 <rect key="frame" x="121" y="233" width="132" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Show Leader"/>
+                                <state key="normal" title="显示排行榜"/>
                                 <connections>
                                     <action selector="showLeaderBoard:" destination="whP-gf-Uak" eventType="touchUpInside" id="wBm-nL-Eyh"/>
                                 </connections>

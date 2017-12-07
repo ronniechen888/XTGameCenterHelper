@@ -18,5 +18,6 @@
 
 -(IBAction)showLeaderBoard:(id)sender;
 -(IBAction)invite:(id)sender;
+-(IBAction)anoymousLogin:(id)sender;
 
 @end

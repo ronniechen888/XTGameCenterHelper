@@ -10,6 +10,8 @@
 
 @interface XTRealTimeGameViewController ()
 
+@property (nonatomic,strong) GKVoiceChat *voiceChat;
+
 @end
 
 @implementation XTRealTimeGameViewController
@@ -25,12 +27,44 @@
 	[button addTarget:self action:@selector(doClick:) forControlEvents:UIControlEventTouchUpInside];
 	[self.view addSubview:button];
 	
+	[XTGameCenterHelper startAudioSession];
+	
+	self.voiceChat = [XTGameCenterHelper startVoiceChatWithMatch:self.match channelName:@"allPlayers" playerStateUpdateHandle:^(GKPlayer *player, GKVoiceChatPlayerState state) {
+		switch (state)
+		{
+			case GKVoiceChatPlayerConnected:
+				
+				break;
+			case GKVoiceChatPlayerDisconnected:
+				
+				break;
+			case GKVoiceChatPlayerSpeaking:
+				[button setBackgroundColor: [UIColor redColor]]; 
+				break;
+			case GKVoiceChatPlayerSilent:
+				[button setBackgroundColor: [UIColor whiteColor]];
+			case GKVoiceChatPlayerConnecting:
+				
+				break;
+		}
+	} deviceNotSupportHandle:^{
+		NSLog(@"Not Support VOIP");
+	}];
+	
 	[[XTGameCenterHelper sharedGameCenter] setGKMatchDelegateDidReceiveDataHandle:^(NSData *data, GKPlayer *recipient, GKPlayer *remotePlayer) {
 		NSString *dataString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
 		NSLog(@"%@",dataString);
 		NSDictionary *jsonDic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
 		
 		[button setBackgroundColor:[UIColor colorWithRed:[jsonDic[@"R"] integerValue]/255.0 green:[jsonDic[@"G"] integerValue]/255.0 blue:[jsonDic[@"B"] integerValue]/255.0 alpha:1]];
+	} didChangeConnectionStateHandle:^(GKPlayer *player, GKPlayerConnectionState state) {
+		if (state == GKPlayerStateDisconnected) {
+			NSLog(@"Player:%@ disconnected",player.displayName);
+		}
+	} didFailedHandle:^(NSError *error) {
+		
+	} shouldReInviteHandle:^BOOL(GKPlayer *player) {
+		return YES;
 	}];
 }
 

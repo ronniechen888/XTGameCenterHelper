@@ -19,7 +19,10 @@
 @property (nonatomic,copy) void (^matchMakerViewControllerDidFindHostedPlayersHandle)(NSArray<GKPlayer *> *players);
 @property (nonatomic,copy) void (^matchMakerViewControllerHostedPlayerDidAcceptHandle)(GKPlayer *player);
 
-@property (nonatomic,copy) void (^receiveDataHandle)(NSData *data,GKPlayer *recipient,GKPlayer *remotePlayer);
+@property (nonatomic,copy) void (^matchDidReceiveDataHandle)(NSData *data,GKPlayer *recipient,GKPlayer *remotePlayer);
+@property (nonatomic,copy) void (^matchDidChangeConnectionHandle)(GKPlayer *player,GKPlayerConnectionState state);
+@property (nonatomic,copy) void (^matchDidFailedHandle)(NSError *error);
+@property (nonatomic,copy) BOOL (^matchShouldReInviteHandle)(GKPlayer *player);
 @end
 
 @implementation XTGameCenterHelper
@@ -85,7 +88,12 @@
 -(void)showGameCenterLoginViewControllerFailedHandler:(void (^)(void))failedHandler
 {
 	if (_gameCenterLoginViewController && !self.isGameCenterLoginViewControllerShowed) {
-		[[UIApplication sharedApplication].keyWindow addSubview:_gameCenterLoginViewController.view];
+		
+		UIViewController *rootController = [UIApplication sharedApplication].keyWindow.rootViewController;
+		
+		[rootController presentViewController:_gameCenterLoginViewController animated:YES completion:nil];
+		
+//		[[UIApplication sharedApplication].keyWindow addSubview:_gameCenterLoginViewController.view];
 		self.isGameCenterLoginViewControllerShowed = YES;
 	}else if (!_gameCenterLoginViewController && !self.isGameCenterLoginViewControllerShowed){
 		if (failedHandler) {
@@ -97,13 +105,20 @@
 -(void)hideGameCenterLoginViewController
 {
 	if (_gameCenterLoginViewController && self.isGameCenterLoginViewControllerShowed) {
-		[_gameCenterLoginViewController.view removeFromSuperview];
+		
+		[_gameCenterLoginViewController dismissViewControllerAnimated:NO completion:nil];
+	
 		self.isGameCenterLoginViewControllerShowed = NO;
 	}
 }
 
 -(void)didEnterToBackGround{
 	[self hideGameCenterLoginViewController];
+}
+
+-(GKLocalPlayer *)anonymousGuestPlayerWithIdentifier:(NSString *)guestIdentifier
+{
+	return [GKLocalPlayer anonymousGuestPlayerWithIdentifier:guestIdentifier];
 }
 
 +(GKLocalPlayer *)localPlayer
@@ -196,9 +211,38 @@
 	[currentController presentViewController:mmvc animated:YES completion:nil];
 }
 
--(void)setGKMatchDelegateDidReceiveDataHandle:(void (^)(NSData *, GKPlayer *, GKPlayer *))receiveDataHandle
+-(void)setGKMatchDelegateDidReceiveDataHandle:(void (^)(NSData *, GKPlayer *, GKPlayer *))receiveDataHandle didChangeConnectionStateHandle:(void (^)(GKPlayer *, GKPlayerConnectionState))changeConnectionHandle didFailedHandle:(void (^)(NSError *))failedHandle shouldReInviteHandle:(BOOL (^)(GKPlayer *))reInviteHandle
 {
-	self.receiveDataHandle = receiveDataHandle;
+	self.matchDidReceiveDataHandle = receiveDataHandle;
+	self.matchDidChangeConnectionHandle = changeConnectionHandle;
+	self.matchDidFailedHandle = failedHandle;
+	self.matchShouldReInviteHandle = reInviteHandle;
+}
+
++(void)startAudioSession{
+	AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+	[audioSession setCategory:AVAudioSessionCategoryPlayAndRecord error:NULL];
+	[audioSession setActive: YES error:NULL];
+}
+
++(GKVoiceChat *)startVoiceChatWithMatch:(GKMatch *)match channelName:(NSString *)name playerStateUpdateHandle:(void (^)(GKPlayer *, GKVoiceChatPlayerState))updateHandle deviceNotSupportHandle:(void (^)(void))notSupportHandle{
+	if ([GKVoiceChat isVoIPAllowed]) {
+		GKVoiceChat *voiceChat = [match voiceChatWithName:name];
+		[voiceChat start];
+		voiceChat.active = YES;
+		
+		voiceChat.playerVoiceChatStateDidChangeHandler = ^(GKPlayer * _Nonnull player, GKVoiceChatPlayerState state) {
+			if (updateHandle) {
+				updateHandle(player,state);
+			}
+		};
+		
+		return voiceChat;
+	}
+	if(notSupportHandle){
+		notSupportHandle();
+	}
+	return nil;
 }
 #pragma mark - GKGameCenterControllerDelegate
 -(void)gameCenterViewControllerDidFinish:(GKGameCenterViewController *)gameCenterViewController
@@ -263,26 +307,34 @@
 #pragma mark - GKMatchDelegate
 
 -(void)match:(GKMatch *)match didReceiveData:(NSData *)data fromRemotePlayer:(GKPlayer *)player{
-	
+	if (self.matchDidReceiveDataHandle) {
+		self.matchDidReceiveDataHandle(data, nil, player);
+	}
 }
 
 -(void)match:(GKMatch *)match didReceiveData:(NSData *)data forRecipient:(GKPlayer *)recipient fromRemotePlayer:(GKPlayer *)player{
 	
-	if (self.receiveDataHandle) {
-		self.receiveDataHandle(data, recipient, player);
+	if (self.matchDidReceiveDataHandle) {
+		self.matchDidReceiveDataHandle(data, recipient, player);
 	}
 }
 
 -(void)match:(GKMatch *)match player:(GKPlayer *)player didChangeConnectionState:(GKPlayerConnectionState)state{
-	
+	if (self.matchDidChangeConnectionHandle) {
+		self.matchDidChangeConnectionHandle(player, state);
+	}
 }
 
 -(void)match:(GKMatch *)match didFailWithError:(NSError *)error{
-	
+	if (self.matchDidFailedHandle) {
+		self.matchDidFailedHandle(error);
+	}
 }
 
 - (BOOL)match:(GKMatch *)match shouldReinviteDisconnectedPlayer:(GKPlayer *)player{
-	
-	return YES;
+	if (self.matchShouldReInviteHandle) {
+		return self.matchShouldReInviteHandle(player);
+	}
+	return NO;
 }
 @end

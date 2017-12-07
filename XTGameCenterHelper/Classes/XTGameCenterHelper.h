@@ -18,6 +18,7 @@
 
 -(void)showGameCenterLoginViewControllerFailedHandler:(void (^)(void))failedHandler;
 
+-(GKLocalPlayer *)anonymousGuestPlayerWithIdentifier:(NSString *)guestIdentifier;
 +(GKLocalPlayer *)localPlayer;
 
 +(NSString *)localPlayerId;
@@ -53,6 +54,12 @@
 														minPlayers:(NSInteger)minNum
 														maxPlayers:(NSInteger)maxNum;
 
--(void)setGKMatchDelegateDidReceiveDataHandle:(void (^)(NSData *data,GKPlayer *recipient,GKPlayer *remotePlayer))receiveDataHandle;
+-(void)setGKMatchDelegateDidReceiveDataHandle:(void (^)(NSData *data,GKPlayer *recipient,GKPlayer *remotePlayer))receiveDataHandle
+			   didChangeConnectionStateHandle:(void (^)(GKPlayer *player,GKPlayerConnectionState state))changeConnectionHandle
+							  didFailedHandle:(void (^)(NSError *error))failedHandle
+						 shouldReInviteHandle:(BOOL (^)(GKPlayer *player))reInviteHandle;
 
++(void)startAudioSession;
+
++(GKVoiceChat *)startVoiceChatWithMatch:(GKMatch*)match channelName:(NSString *)name playerStateUpdateHandle:(void (^)(GKPlayer *player, GKVoiceChatPlayerState state))updateHandle deviceNotSupportHandle:(void (^)(void))notSupportHandle;
 @end
